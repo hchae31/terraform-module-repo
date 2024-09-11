@@ -18,10 +18,10 @@ variable "security_group_id" {
   type = string
 }
 
-# variable "instance_type" {
-#   description = ""
-#   type = string
-# }
+ variable "instance_type" {
+   description = ""
+   type = string
+ }
 
 variable "user_data" {
   description = "user script to execute"
