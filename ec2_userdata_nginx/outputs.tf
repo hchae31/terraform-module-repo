@@ -1,3 +1,3 @@
 output "nginx_userdata" {
-  value = data.templatefile.nginx_userdata.rendered
+  value = data.template_file.nginx_userdata.rendered
 }
