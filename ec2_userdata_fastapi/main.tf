@@ -1,5 +1,9 @@
 data "template_file" "fastapi_userdata" {
   template = <<-EOF
+    # FastAPI / Uvicorn 설치
+    /home/ubuntu/miniconda3/bin/conda install -y python=3.10
+    /home/ubuntu/miniconda3/bin/pip install fastapi uvicorn
+
     # 간단한 FastAPI 앱 생성
     cat <<EOL > /home/ubuntu/main.py
     from fastapi import FastAPI
